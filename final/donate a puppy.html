@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donate a Puppy</title>
+<link rel="stylesheet" type="text/css" href="project.css">
+
+<meta content="text/html" charset="utf-8">
+<script type="text/javascript">
+var citiesByState = {
+"Western": ["Colombo","Gampaha","Kalutara"],
+"Southern": ["Galle","Matara","Hambantota"],
+"Northern": ["Jaffna","Kilinochchi","Mannar","Mullaitivu","Vavuniya"],
+"Eastern":["Trincomalee","Batticoloa","Ampara"],
+"Central":["Kandy","Nuwara Eliya","Matale"],
+"Uva":["Badulla","Monaragala"],
+"Sabaragamuwa":["Kegalle","Ratnapura"],
+"North Western":["Puttalam","Kurunegala"],
+"North Central":["Anuradhapura","Polonnaruwa"],
+}
+function makeSubmenu(value) {
+if(value.length==0) document.getElementById("citySelect").innerHTML = "<option></option>";
+else {
+var citiesOptions = "";
+for(cityId in citiesByState[value]) {
+citiesOptions+="<option>"+citiesByState[value][cityId]+"</option>";
+}
+document.getElementById("citySelect").innerHTML = citiesOptions;
+}
+}
+function displaySelected() { var country = document.getElementById("countrySelect").value;
+var city = document.getElementById("citySelect").value;
+alert(country+"\n"+city);
+}
+function resetSelection() {
+document.getElementById("countrySelect").selectedIndex = 0;
+document.getElementById("citySelect").selectedIndex = 0;
+}
+</script>
+
+</head>
+
+<body onload="resetSelection()">
+<div id="Container">
+<div id="Header">
+<img src="SPO Logo.jpg" align="left" width="150px" height="150px">
+<h1 align="center"><font size="10">Street Puppy Organization (S.P.O)</font></h1>
+<h2 align="center"s>-Donate a Puppy / Puppies-</h2>
+</div>
+<div id="body">
+
+		<div id="home">
+		<p><a href="home.html">Home</a></p>
+		</div>
+
+		<div id="about_us">
+		<p><a href="about us.html">About Us</a></p>
+		</div>
+
+		<div id="services">
+		<p><a href="services.html">Services</a></p>
+		</div>
+
+		<div id="get_puppy">
+		<p><a href="get a puppy.html">Get a Puppy</a></p>
+		</div>
+
+		<div id="donate">
+		<p><a href="donate a puppy.html">Donate a Puppy</a></p>
+		</div>
+	
+	</div>
+
+
+<div id="Description" align="center">
+<h3><font color="white" size="5">If you have details about homeless puppies, please let us know.<br><br>Fill out the form below with your details</font></h3>
+</div>
+
+<div id="Form" >
+<center><b>
+<h2><font color="amaranth">About you</font></h2>
+<table>
+<tr>
+<td><form>Name</td><td>:</td><td> <input name="name" type="text" size="35"></input></td></form>
+</tr>
+<tr>
+<td></form>Address</td><td>:</td><td> <textarea name="address" rows="4" cols="25"></textarea></td></form>
+</tr>
+<tr>
+<td><form>Province</td><td>:</td><td><select id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+<option value="" disabled selected>Choose province</option>
+<option>Western</option>
+<option>Southern</option>
+<option>Northern</option>
+<option>Eastern</option>
+<option>Central</option>
+<option>Uva</option>
+<option>Sabaragamuwa</option>
+<option>North Western</option>
+<option>North Central</option>
+</select></td></form>
+</tr>
+<tr>
+<td><form>District</td><td>:</td><td><select id="citySelect" size="1" >
+<option value="" disabled selected>Choose district</option>
+
+</select>
+</td></form>
+</tr>
+
+<tr>
+<td><form>Date of Birth</td><td>:</td><td> <input name="dob" type="date"></input></td></form>
+</tr>
+<tr>
+<td><form>Gender</td><td>:</td><td> <input type="radio" name="gender" value="male"><font color="blue">Male</font>
+<input type="radio" name="gender" value="female"><font color="red">Female</font></td></form>
+</tr>
+<tr>
+<td><for>Mobile No</td><td>:</td><td> <input name="num" type="number"></input></td></form>
+</tr>
+<tr>
+<td><form>Email</td><td>:</td><td> <input name="email" type="text" size="35"></input></td></form>
+</tr>
+
+</table>
+<h2><font color="amaranth">About a Puppy / Puppies</font></h2>
+<table>
+<tr>
+<td><form>No of Puppies</td><td>:</td><td><input name="pnum" type="number"></inpput></td></form>
+</tr>
+<tr>
+<td><form>No of Male Puppies</td><td>:</td><td><input name="mnum" type="number"></input></td></form>
+</tr>
+<tr>
+<td><form>No of Female Puppies</td><td>:</td><td><input name="fnum" type="number"></input></td></form>
+</tr>
+<tr>
+<td><form>Address (Where They are)</td><td>:</td><td><textarea name="address" rows="4" cols="25"></textarea></td></form>
+</tr>
+<tr>
+<td><form>A Picture of them</td><td>:</td><td><input type="file" name="pic" accept="image/jpeg, image/png, image/jpg"></input></td></form>
+</tr>
+<tr>
+<td><form></td><td></td><td>(jpeg/png/jpg)</td></form>
+</tr>
+<tr>
+<td><form>Age (Approximately)</td><td>:</td><td><input type="number" name="age"></input></td></form>
+</tr>
+<tr>
+<td><form>Can You Bring the Puppy / Puppies here</td><td>:</td><td><input type="radio" name="bring" value="yes"><font color="blue">Yes</font>
+<input type="radio" name="bring" value="no"><font color="red">No</font></td></form>
+</tr>
+<tr>
+<td><form>Date of Submission</td><td>:</td><td><text id="date"></text></td></form>
+</tr>
+<script>
+var d= new Date();
+document.getElementById("date").innerHTML = (d.getMonth()+1)+"/"+d.getDate()+'/'+d.getFullYear()+' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds();
+</script>
+
+<tr>
+<td><form><button  name="reset" id="reset" class="button2">Reset the Fill Details</button>
+  <button  name="submit" id="submit" class="button2">Submit</button></td></form>
+</tr>
+</b></center>
+</table>
+<h3>If you are unable to bring the puppy / puppies, we will contact you as soon as possible to inform you about the transportation arrangements.</h3>
+</div>
+
+<center>
+<div id="Footer"> <b>&copy  Street Puppy Organization<br>
+<p id="demo"></p></b>
+</div>
+</center>
+<script type="text/javascript">
+let text= document.lastModified;
+
+document.getElementById("demo").innerHTML="Last Updated:"+text;
+</script>
+</div>
+</body>
+</html>
+

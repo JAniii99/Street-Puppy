@@ -1,0 +1,153 @@
+#Container{
+	margin:auto; 
+	width:1500px;
+	border: 5px solid blue ;
+}
+
+#Header{
+	background-color: skyblue;
+	padding: 5px;
+	height: 150px; 
+	font-family:Comic Sans MS;
+	text-shadow: 2px 2px 4px whitesmoke;
+}
+
+#Description{
+	width: 1480px;
+	height: 160px;
+	background-color: royalblue;
+	padding: 10px; 
+	font-family:Comic Sans MS;
+	
+}
+
+#Form{
+	width:1390px;
+	height: 810px;
+	background-color: lightcyan;
+	padding: 55px; 
+	background-image:url("IMG_20220306_203702.jpg"); 
+	font-family:Comic Sans MS;
+	background-size:1500px 920px;
+	background-repeat:no-repeat;
+}
+
+#Footer{
+	clear:both;
+	padding: 5px;
+	height: 80px;
+	background-color: yellow;
+	font-family: Comic Sans MS;
+	font-size: 1.1em;
+	color: #0000f0;
+}
+
+button{
+	background-color:royalblue;
+	margin:5px 5px 5px 0px;
+	padding:5px;
+	border:0;
+	width:100px
+	height:60px;
+	font-size: 1.0em;
+	font-family: Comic Sans MS;
+	color:whitesmoke;
+	border-radius:20px;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input{
+	background-color:powderblue;
+	border:1;
+	border-color: steelblue;
+	height:20px;
+	color:darkblue;
+	padding-left:10px;
+	font-family: Comic Sans Ms;
+	border-radius:12px;
+}
+textarea{
+	background-color: powderblue;
+	border: 1;
+	border-color: steelblue;
+	color: darkblue;
+	padding-left: 10px;
+	font-family: Comic Sans Ms;
+	border-radius:12px;
+}
+select{
+	background-color: aliceblue;
+	border: 1;
+	border-color: steelblue;
+	color: mediumvioletred;
+	padding-left: 10px;
+	font-family: Comic Sans Ms;
+	border-radius:12px;
+}
+#home{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#about_us{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#services{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#get_puppy{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#donate{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+a{
+	color:black;
+	text-decoration:none;
+	font-size: 1.4em;
+}
+
+a:active{
+	color:black;
+	text-decoration:none;
+	font-size: 1.4em;
+}
+
+a:hover{
+	color:black;
+	font-size: 2em;
+	border:outset 5px #2E86C1;
+	background-color:skyblue;
+	border-radius: 10px;
+}

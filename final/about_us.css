@@ -1,0 +1,111 @@
+#container{
+width:1500px;
+margin:auto;
+border:5px solid blue;
+}
+
+#content{
+font-family: Comic Sans MS;
+margin:auto;
+width:1250px;
+align:center;
+
+}
+
+#header{
+margin:auto;
+height:150px;
+background-color:skyblue;
+align:center;
+font-family: Comic Sans MS;
+padding:5px;
+text-shadow: 2px 2px 4px whitesmoke;
+
+}
+
+#footer{
+clear:both;
+font-family:Comic Sans MS;
+font-size: 1.1em;
+height:90px;
+background-color:yellow;
+color:#0000f0;
+padding:5px;
+}
+
+#image{
+width:1500px;
+background-image: url(puppy7.jpg);
+background-size: cover;
+margin:auto;
+}
+
+#body{
+width:1500px;
+height:70px;
+}
+
+#home{
+width:300px;
+height:70px;
+background-color:skyblue;
+float:left;
+font-family:Comic Sans MS;
+text-align:center;
+}
+
+#about_us{
+width:300px;
+height:70px;
+background-color:skyblue;
+float:left;
+font-family:Comic Sans MS;
+text-align:center;
+}
+
+#services{
+width:300px;
+height:70px;
+background-color:skyblue;
+float:left;
+font-family:Comic Sans MS;
+text-align:center;
+}
+
+#get_puppy{
+width:300px;
+height:70px;
+background-color:skyblue;
+float:left;
+font-family:Comic Sans MS;
+text-align:center;
+}
+
+#donate{
+width:300px;
+height:70px;
+background-color:skyblue;
+float:left;
+font-family:Comic Sans MS;
+text-align:center;
+}
+
+a{
+color:black;
+text-decoration:none;
+font-size: 1.4em;
+}
+
+a:active{
+color:black;
+text-decoration:none;
+font-size: 1.4em;
+}
+
+a:hover{
+color:black;
+font-size: 2em;
+border:outset 5px #2E86C1;
+background-color:skyblue;
+border-radius: 10px;
+}

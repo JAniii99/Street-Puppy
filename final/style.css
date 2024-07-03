@@ -1,0 +1,167 @@
+*{   
+    margin: 0;
+	padding: 0;
+}
+.header{
+	background-color: skyblue;
+	padding: 5px;
+	height: 150px;
+	font-family: Comic Sans MS;
+    	text-align: center;
+}
+nav{
+	display: flex;
+	padding: 0.5% 40%;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-links ul li{
+	 list-style: none;
+	
+}	 
+.text-box{
+	width: 50%;
+	color: black;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	transform: translate(-1%,-1%);
+	text-align: center;
+	font-family:Comic Sans Ms;
+}
+.text-box h1{
+	font-size: 30px;
+	font-family:Comic Sans Ms;
+}
+.text-box h2{
+	font-size: 20px;
+	margin:3px 0 5px
+}
+.text-box1{
+	width: 50%;
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-1%,-1%);
+	text-align: center;
+	font-family:Comic Sans Ms;
+}
+.text-box1 h2{
+	font-size: 20px;
+	left: 20%;
+	
+	
+}	
+.text-box p{
+	margin: 10px 0 40px;
+    font-size: 5px;	
+}
+.Footer{
+	clear:both;
+	padding: 5px;
+	height: 80px;
+	background-color: yellow;
+	font-family: Comic Sans MS;
+	font-size: 1.1em;
+	color: #0000f0;
+}
+	
+#Container{
+	margin:auto; 
+	width:1500px;
+	border: 5px solid blue ;
+}
+#Header{
+	background-color: skyblue;
+	padding: 5px;
+	height: 150px;
+	font-family: Comic Sans MS;
+	text-shadow: 2px 2px 4px whitesmoke;
+}
+#Description{
+	width: 1480px;
+	background-color: lightcyan;
+	padding: 10px;
+	font-family: Comic Sans Ms;
+	text-align:center;
+	font-size:1.2em;
+	color:black;
+	background-image:url(banner.png);
+	background-size:cover;
+}
+#Footer{
+	clear:both;
+	padding: 5px;
+	height: 80px;
+	background-color: yellow;
+	font-family: Comic Sans MS;
+	font-size: 1.1em;
+	color: #0000f0;
+}.center-text{
+	text-align: center;
+}
+#home{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#about_us{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#services{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#get_puppy{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+#donate{
+	width:300px;
+	height:70px;
+	background-color:skyblue;
+	float:left;
+	font-family:Comic Sans MS;
+	text-align:center;
+}
+
+a{
+	color:black;
+	text-decoration:none;
+	font-size: 1.4em;
+}
+
+a:active{
+	color:black;
+	text-decoration:none;
+	font-size: 1.4em;
+}
+
+a:hover{
+	color:black;
+	font-size: 2em;
+	border:outset 5px #2E86C1;
+	background-color:skyblue;
+	border-radius: 10px;
+}
